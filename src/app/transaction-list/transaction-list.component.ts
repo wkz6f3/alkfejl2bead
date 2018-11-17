@@ -51,6 +51,15 @@ export class TransactionListComponent implements OnInit {
 
     },
   ]
+
+  delete(){
+    console.log("delete");
+  }
+
+  edit(){
+    console.log("edit");
+  }
+  
   filteredTransactions = [];
   selectedType = '';
   selectedTransaction = null;

@@ -5,7 +5,7 @@
 ></type-filter>
 
 <p>
-{{ selectedIssue | json }}
+{{ selectedTransaction | json }}
 </p>
 <mat-nav-list>
   <a *ngFor="let transaction of filteredTransactions" mat-list-item
@@ -15,6 +15,8 @@
     <mat-icon *ngIf="transaction.type[0] === 'bevasarlas'"   matListIcon style="color: red">add_shopping_cart</mat-icon>
     <mat-icon *ngIf="transaction.type[0] === 'elelmiszer'" matListIcon style="color: orange">fastfood</mat-icon>
     <mat-icon *ngIf="transaction.type[0] === 'egeszseg'"  matListIcon style="color: green">local_hospital</mat-icon>
+    <mat-icon (click)="delete()">delete</mat-icon>
+    <mat-icon (click)="edit()">edit</mat-icon>
 
     <h2 matLine><strong>{{ transaction.title }}</strong></h2>
     <small matLine>
@@ -26,8 +28,9 @@
     <small matLine>
         <mat-icon id="sorelejiikon" *ngIf="transaction.amount >= 0" matListIcon style="color: green">attach_money</mat-icon>
         <mat-icon id="sorelejiikon" *ngIf="transaction.amount < 0"  matListIcon style="color: red" >attach_money</mat-icon> <strong>{{ transaction.amount }}</strong>
-    </small>
+    </small> 
   </a>
+ 
 </mat-nav-list>
 
 <transaction-form></transaction-form>
