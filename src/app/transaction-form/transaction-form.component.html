@@ -1,0 +1,6 @@
+<form [formGroup]="transactionForm">
+  <mat-form-field>
+    <input matInput placeholder="Place" formControlName="place">
+  </mat-form-field>
+</form>
+{{transactionForm.value | json}}

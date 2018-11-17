@@ -1,0 +1,33 @@
+<h2>Transaction list</h2>
+
+<type-filter [type]="selectedType"
+  (change)="onFilterChange($event)"
+></type-filter>
+
+<p>
+{{ selectedIssue | json }}
+</p>
+<mat-nav-list>
+  <a *ngFor="let transaction of filteredTransactions" mat-list-item
+    (click)="selectedTransaction = transaction" 
+    [class.selected]="transaction === selectedTransaction"
+  >
+    <mat-icon *ngIf="transaction.type[0] === 'bevasarlas'"   matListIcon style="color: red">add_shopping_cart</mat-icon>
+    <mat-icon *ngIf="transaction.type[0] === 'elelmiszer'" matListIcon style="color: orange">fastfood</mat-icon>
+    <mat-icon *ngIf="transaction.type[0] === 'egeszseg'"  matListIcon style="color: green">local_hospital</mat-icon>
+
+    <h2 matLine><strong>{{ transaction.title }}</strong></h2>
+    <small matLine>
+      <mat-icon>trip_origin</mat-icon> {{ transaction.type }}
+    </small>
+    <small matLine>
+      <mat-icon>access_time</mat-icon> {{ transaction.updated_at }}
+    </small>
+    <small matLine>
+        <mat-icon id="sorelejiikon" *ngIf="transaction.amount >= 0" matListIcon style="color: green">attach_money</mat-icon>
+        <mat-icon id="sorelejiikon" *ngIf="transaction.amount < 0"  matListIcon style="color: red" >attach_money</mat-icon> <strong>{{ transaction.amount }}</strong>
+    </small>
+  </a>
+</mat-nav-list>
+
+<transaction-form></transaction-form>

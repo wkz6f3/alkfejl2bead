@@ -1,0 +1,21 @@
+h2 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+small mat-icon {
+  font-size: smaller;
+  height: auto;
+  width: auto;
+}
+a.selected {
+  background-color: peru;
+}
+
+#sorelejiikon {
+  font-size: smaller;
+  height: auto;
+  width: auto;
+  padding : 0px;
+}
+
+

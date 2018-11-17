@@ -1,0 +1,9 @@
+<mat-button-toggle-group [value]="selectedType"
+  (change)="onFilterChange($event)"
+>
+  <mat-button-toggle value="">All</mat-button-toggle>
+  <mat-button-toggle value="bevasarlas">Bevásárlás</mat-button-toggle>
+  <mat-button-toggle value="elelmiszer">Élelmiszer</mat-button-toggle>
+  <mat-button-toggle value="egeszseg">Egészség</mat-button-toggle>
+</mat-button-toggle-group>
+{{ selectedType }}
