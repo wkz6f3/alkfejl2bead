@@ -14,4 +14,9 @@ export class TransactionAddComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClick(){
+    console.log("kattintottunk");
+
+  }
+
 }
