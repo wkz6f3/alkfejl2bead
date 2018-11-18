@@ -18,4 +18,11 @@ a.selected {
   padding : 0px;
 }
 
+#moddelete {
+  height: auto;
+  width: auto;
+  padding: 8px
+
+}
+
 

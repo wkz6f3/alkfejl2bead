@@ -18,7 +18,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { RoutingModule } from './routing/routing.module';
 import { TypeFilterComponent } from './type-filter/type-filter.component';
 import { TransactionFormComponent } from './transaction-form/transaction-form.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { TransactionAddComponent } from './transaction-add/transaction-add.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     TransactionListComponent,
     MainPageComponent,
     TypeFilterComponent,
-    TransactionFormComponent
+    TransactionFormComponent,
+    TransactionAddComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatButtonToggleModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

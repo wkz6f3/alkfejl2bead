@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { TransactionListComponent } from "../transaction-list/transaction-list.component";
 import { MainPageComponent } from '../main-page/main-page.component';
+import { TransactionAddComponent } from '../transaction-add/transaction-add.component';
 
 const routes: Routes = [
   {
@@ -12,7 +13,12 @@ const routes: Routes = [
   {
     path: 'transactions',
     component: TransactionListComponent
+  },
+  {
+    path: 'transactions/add',
+    component: TransactionAddComponent
   }
+
 ];
 
 @NgModule({
