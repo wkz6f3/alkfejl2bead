@@ -134,3 +134,16 @@ Az alkalmazás egy család pénzügyeit tudja kezelni. A bevételek és kiadáso
   - Saját tranzakciók törlése: A saját tranzakciók listájából egy elem törlése a jobb oldali kis törlés ikon használatával
   - Saját tranzakciók felvétele: Új tranzakció hozzáadása a listához új elem felvételével
 (Minden felhasználó és adminisztrátor az új tranzakciók felvételekor fel tud venni új típusokat, üzeneteket.)
+
+### 4.6 Felhasználói dokumentáció
+
+- Telepítés előtt pár szükséges lépés
+  - Kegy NodeJS és az npm amit itt lehet letölteni : www.npmjs.com/get-npm
+  - Internet elérés
+- Telepítés
+  - Látogasson el a github.com/abnagy/alkfejl2bead oldalra
+  - Itt kattintson a "Clone and Download" gombra, és azon belül kattintson a "Download as Zip" gombra.
+  - A letöltött állományt csomagoljuk ki
+  - npm i parancsot adjuk ki parancssorban a kicsomagolt állomány mappájában.
+  - npm start-al elindíthatjuk a programot
+- Regisztrálás és bejelentkezés után használhatjuk a programot a szolgáltatásokban leírtak szerint.
