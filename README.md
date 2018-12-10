@@ -41,12 +41,13 @@ Az alkalmazás egy család pénzügyeit tudja kezelni. A bevételek és kiadáso
 
 ## 2. Fejlesztői környezet és használt technológiák
 
-- NetBeans használata
+- NetBeans 8.2 használata
 - h2 adat-báziskezelő rendszer
 - Java Spring Boot technológia használata
 - MVC modell
-- REST API
+- REST API 
 - authorizált végpontokkal
+- Angular 7.1.3 használata
 
 ## 3. Adatbázis-terv
 
