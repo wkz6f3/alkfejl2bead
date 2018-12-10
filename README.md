@@ -67,15 +67,15 @@ Az alkalmazás egy család pénzügyeit tudja kezelni. A bevételek és kiadáso
 
 1. Bejelentkezés
 2. Bejelentkezett adminisztrátor funkciói
-  - Összes tranzakció megtekintése: A tranzakciók listájának megtekintése
-  - Tranzakciók módosítása: A tranzakciók listájából egy elem módosítása a jobb oldali kis módosítás ikon használatával
-  - Tranzakciók törlése: A tranzakciók listájából egy elem törlése a jobb oldali kis törlés ikon használatával
-  - Tranzakció felvétele: Új tranzakció hozzáadása a listához új elem felvételével
+  - Összes tranzakció megtekintése
+  - Tranzakciók módosítása
+  - Tranzakciók törlése
+  - Tranzakció felvétele
 3. Bejelentkezett felhasználó funkciói
-  - Saját tranzakciók megtekintése: Saját tranzakciók listájának megtekintése
-  - Saját tranzakciók módosítása: Saját tranzakciók listájából egy elem módosítása a jobb oldali kis módosítás ikon használatával
-  - Saját tranzakciók törlése: A saját tranzakciók listájából egy elem törlése a jobb oldali kis törlés ikon használatával
-  - Saját tranzakciók felvétele: Új tranzakció hozzáadása a listához új elem felvételével
+  - Saját tranzakciók megtekintése
+  - Saját tranzakciók módosítása
+  - Saját tranzakciók törlése
+  - Saját tranzakciók felvétele
 (Minden felhasználó és adminisztrátor az új tranzakciók felvételekor fel tud venni új típusokat, üzeneteket.)
 
 ### 4.2 Végpontok
@@ -115,7 +115,22 @@ Az alkalmazás egy család pénzügyeit tudja kezelni. A bevételek és kiadáso
 - Felhasználó
 ![user](https://github.com/abnagy/alkfejl/blob/master/user.png)
 
-### Egy funkció leírása
+### 4.4 Egy funkció leírása
 
 - Admin módosítás:
   - A módosítás gombra kattintva a front enden megjelennek a módosítható mezők, azokat kitöltve a feltételeknek megfelelően, majd a mentés gombra kattintva az adatokat elküldi a rest API felé, aki elmenti a változásokat.
+  
+### 4.5 Szolgáltatások
+
+1. Bejelentkezés
+2. Bejelentkezett adminisztrátor funkciói
+  - Összes tranzakció megtekintése: A tranzakciók listájának megtekintése
+  - Tranzakciók módosítása: A tranzakciók listájából egy elem módosítása a jobb oldali kis módosítás ikon használatával
+  - Tranzakciók törlése: A tranzakciók listájából egy elem törlése a jobb oldali kis törlés ikon használatával
+  - Tranzakció felvétele: Új tranzakció hozzáadása a listához új elem felvételével
+3. Bejelentkezett felhasználó funkciói
+  - Saját tranzakciók megtekintése: Saját tranzakciók listájának megtekintése
+  - Saját tranzakciók módosítása: Saját tranzakciók listájából egy elem módosítása a jobb oldali kis módosítás ikon használatával
+  - Saját tranzakciók törlése: A saját tranzakciók listájából egy elem törlése a jobb oldali kis törlés ikon használatával
+  - Saját tranzakciók felvétele: Új tranzakció hozzáadása a listához új elem felvételével
+(Minden felhasználó és adminisztrátor az új tranzakciók felvételekor fel tud venni új típusokat, üzeneteket.)
